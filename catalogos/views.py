@@ -3,7 +3,7 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def homeCatalogos(request):
-    return HttpResponse('<h1>Estás en Catalogos</h1>')
+    return render(request, 'home.html')
 
 def aulasCreate(request):
     return HttpResponse('<h1>Creando nueva Aula</h1>')
